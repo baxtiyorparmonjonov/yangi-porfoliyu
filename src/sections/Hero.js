@@ -5,6 +5,19 @@
     return (
         <section id="hero" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
         {/* Orqa fondagi yorug'lik blur effektlari */}
+        {/* Orqa fondagi harakatlanuvchi neon nur */}
+        <motion.div 
+            animate={{ 
+                scale: [1, 1.2, 1], 
+                opacity: [0.3, 0.5, 0.3] 
+            }}
+            transition={{ 
+                duration: 6, 
+                repeat: Infinity, 
+                ease: "easeInOut" 
+            }}
+            className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-cyan-500/20 rounded-full blur-[120px] pointer-events-none"
+        />
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
         
         <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10 py-12">
