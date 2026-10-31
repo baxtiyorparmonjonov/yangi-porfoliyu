@@ -15,7 +15,18 @@ const Projects = () => {
   return (
     <section id="projects" className="py-24 relative bg-slate-950 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        
+           
+        <motion.div
+          layout
+          whileHover={{ 
+            scale: 1.03, 
+            rotateX: 5, 
+            rotateY: -5,
+            boxShadow: "0px 20px 40px rgba(6, 182, 212, 0.25)" 
+          }}
+          transition={{ type: "spring", stiffness: 400, damping: 25 }}
+          // qolgan classlar...
+        ></motion.div>
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
