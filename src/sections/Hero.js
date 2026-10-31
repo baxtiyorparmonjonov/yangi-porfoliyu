@@ -48,15 +48,13 @@ const Hero = ({ darkMode }) => {
           {/* Tugmalar */}
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
             <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              href="#projects"
-              className="px-8 py-4 rounded-xl bg-cyan-500 text-slate-950 font-bold flex items-center gap-3 shadow-[0_0_25px_rgba(6,182,212,0.4)] hover:bg-cyan-400 transition-all"
-            >
-              <span>Loyihalarni ko'rish</span>
-              <ArrowRight className="w-5 h-5" />
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                href="#projects"
+                className="px-8 py-4 rounded-xl bg-cyan-500 text-slate-950 font-bold flex items-center gap-3 shadow-[0_0_30px_rgba(6,182,212,0.6)] animate-pulse hover:bg-cyan-400 transition-all"
+                >
+                <span>Loyihalarni ko'rish</span>
             </motion.a>
-
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
